@@ -1,3 +1,3 @@
-Name: Aashish Shrestha
+Age: 23Name: Aashish Shrestha
 College: Madan Bhandari Memorial College
 Hobby: Playing games, Photography, Coding
