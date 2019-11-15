@@ -1,0 +1,63 @@
+.whole-wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-top-overflow{
+    height: 100%;
+    width: 100%;
+    background-color:#f3867f;
+}
+
+.header-down-overflow{
+    height: 75px;
+    width: 100%;
+    background: #ececec;
+    float: right;
+
+}
+
+.header-container{
+    width: 100%;
+    margin: 0;
+    height:75px;
+    background: #76c7c1;
+}
+
+.logo-wrapper{
+    float: left;
+    height: 70px;
+    width: 70px;
+}
+
+.menu-wrapper ul{
+    float: right;
+    width: auto;
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+.menu-wrapper ul li{
+    display: inline-block;
+}
+
+.menu-wrapper ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+}
+
+.header-down-about{
+    float: left;
+    width: auto;
+    margin-top: 30px;
+}
+
+.header-down-home{
+    float: right;
+    width: auto;
+    margin-top: 30px;
+
+}
+
+
