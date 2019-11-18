@@ -1,0 +1,108 @@
+.whole-wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+.header-top-overflow{
+    width: 100%;
+    margin: auto;
+    height:auto;
+    background-image: url("../images/headerline.png");
+    background-repeat: repeat-x;
+}
+
+.header-container{
+    width: 1170px;
+    margin: auto;
+    height:75px;
+}
+
+.header-down-overflow{
+    height: 80px;
+    width: 100%;
+    background: #ececec;
+
+}
+
+.header-down{
+    height: auto;
+    margin: auto;
+    width: 1170px;
+}
+
+.header-down-about{
+    float: left;
+    width: auto;
+    margin-top: 30px;
+}
+
+.header-down-home{
+    float: right;
+    width: auto;
+    margin-top: 30px;
+
+}
+
+.logo-wrapper{
+    float: left;
+    height: 70px;
+    width: 70px;
+}
+
+.footer-wrapper{
+    height: 300px;
+    width: 100%;
+    background: url("../images/footer-line.png");
+    background-repeat: repeat-x;
+}
+
+.footer-container{
+    height: 300px;
+    width: 1170px;
+    margin: auto;
+    color: white;
+}
+
+.box-content-detail{
+    height: auto;
+    width: 290px;
+    float: left;
+    margin-top: 40px;
+}
+
+.box-content-company{
+    height: auto;
+    width: 180px;
+    float: left;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.box-content-community{
+    height: auto;
+    width: 190px;
+    list-style-type: disc;
+    float: left;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.box-content-blog{
+    height: auto;
+    width: 480px;
+    float: right;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.footer-nav{
+    height: 50px;
+    width: auto;
+    background-color: #6bb4ad;
+}
+
+.footer{
+    height: auto;
+    width: 1170px;
+    margin:auto;
+}
