@@ -1,0 +1,29 @@
+.preheader-navbar{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.preheader-logo{
+    float: left;
+    width: 25%;
+}
+
+.logo-buttom{
+    padding-left: 120px;
+    font-size: 10px;
+}
+
+.preheader-menu ul{
+    float: right;
+    list-style-type: none;
+}
+
+.preheader-menu ul li{
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.preheader-items{
+    font-size: 10px;
+    
+}
