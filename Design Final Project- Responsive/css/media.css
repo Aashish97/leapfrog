@@ -1,0 +1,41 @@
+@media screen and (max-width:768px){
+    .whole-wrapper{
+        width: 170%;
+    }
+
+    .preheader-wrapper{
+        width: 170%;
+    }
+
+    .preheader-navbar{
+        max-width: 95%;
+    }
+
+    .header-wrapper{
+        width: 170%;
+    }
+
+    .body-youniverse-wrapper{
+        width: 170%;
+    }
+
+    .body-latest-post{
+        width: 170%;
+    }
+
+    .body-get-discounts{
+        width: 170%;
+    }
+
+    .body-newest-collection{
+        width: 170%;
+    }
+
+    .body-contact{
+        width: 170%;
+    }
+    
+    footer{
+        width: 170%;
+    }
+}
