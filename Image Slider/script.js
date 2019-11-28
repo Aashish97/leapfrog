@@ -43,6 +43,11 @@ function slider(imageSourceList = [], transitionTime, holdTime){
     this.addContainer = function(){
         this.container = document.createElement('div');
         this.container.classList.add('carousel-container');
+        this.container.style.width = '600px';
+        this.container.style.height = '400px';
+        this.container.style.marginLeft = '40px';
+        this.container.style.marginButtom = '20px';
+        this.container.style.marginTop = '40px';
 
         document.body.appendChild(this.container);
 
@@ -189,7 +194,7 @@ function slider(imageSourceList = [], transitionTime, holdTime){
                             this.indicatorsList[i].style.height = '15px';
                             this.indicatorsList[i].style.backgroundColor = 'grey';
                         }
-                        }
+                    }
                     
                     this.leftButton.disabled = false;
                     this.rightButton.disabled = false;
@@ -380,3 +385,6 @@ function slider(imageSourceList = [], transitionTime, holdTime){
 }
 
 new slider(images, 2, 2).init();
+new slider(images, 4, 4).init();
+new slider(images, 6, 4).init();
+new slider(images, 10, 8).init();
