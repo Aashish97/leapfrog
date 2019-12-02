@@ -443,6 +443,7 @@ function start(gameOver){
         playButton.style.marginRight = 'auto';
         playButton.style.fontSize = '20px';
         playButton.style.padding = '5px';
+        playButton.style.cursor = 'pointer';
         firstScreen.appendChild(playButton);
 
         playButton.onclick = function(e){
@@ -486,6 +487,7 @@ function start(gameOver){
         playButton.style.marginRight = 'auto';
         playButton.style.fontSize = '20px';
         playButton.style.padding = '5px';
+        playButton.style.cursor = 'pointer';
         firstScreen.appendChild(playButton);
 
         playButton.onclick = function(e){
