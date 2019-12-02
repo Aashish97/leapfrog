@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.main-container{
+    margin: auto;
+    display: table;
+    margin-top: 20px;
+}
+
+.game-container{
+    width: 700px;
+    height: 600px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.stats-info{
+    float:left;
+    margin-left: 15px;
+}
+
+.stats-info h2{
+    font-family: cursive;
+    color: brown;
+    font-size: 25px;
+}
+
+.stats-info span{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 25px;
+    
+}
+
+#level{
+    color: blue;
+}
+
+#cars-passed, #cars-destroyed, #total-score{
+    color: green;
+}
+
+#ammo{
+    color: rgb(209, 138, 6);
+}
+
+#highest-score{
+    color: red;
+}
