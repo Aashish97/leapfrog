@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+.game-container{
+    font-family: myFont;
+    width: 500px;
+    height: 650px;
+    float: left;
+    margin-left: 100px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 25px;
+}
