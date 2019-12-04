@@ -8,7 +8,6 @@ body{
 }
 
 .game-container{
-    font-family: myFont;
     width: 500px;
     height: 650px;
     float: left;

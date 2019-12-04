@@ -7,10 +7,10 @@ function Bird(parentElem, top = 300, left = 150){
     this.top = top;
     this.UP_DIFF = 80;
     this.upSpeed = 7;
-    this.initialFallSpeed = 4;
-    this.fallSpeed = 4;
+    this.initialFallSpeed = 3;
+    this.fallSpeed = 3;
     this.flying = false;
-    this.FPS = 60;
+    this.FPS = 50;
     this.FLY_UP_INTERVAL = 1000 / this.FPS;
     this.backgroundPositions = ['0% 0%', '0% 50%', '0% 100%'];
     this.angle = 0;
@@ -78,7 +78,7 @@ function Bird(parentElem, top = 300, left = 150){
     this.dropDown = function(){
         if(!this.flying){
             this.top += this.fallSpeed;
-            this.fallSpeed += 0.1;
+            this.fallSpeed += 0.05;
             if(this.angle < 90){
                 this.angle += 2;
             }

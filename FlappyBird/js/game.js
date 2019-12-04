@@ -118,7 +118,7 @@ function Game(){
 
     this.play = function(){
 
-        // check collision with ground and game over here..
+        // check collision with ground
         if(this.bird.top > this.containerHeight - this.groundHeight - this.bird.HEIGHT){
             this.bird.angle = 90;
             this.bird.setAngle();
@@ -208,6 +208,7 @@ function Game(){
         playButton.style.width = '126px';
         playButton.style.height = '70px';
         playButton.style.backgroundSize = 'cover';
+        playButton.style.cursor = 'pointer';
         this.container.appendChild(playButton);
 
         playButton.onclick = function(e){
