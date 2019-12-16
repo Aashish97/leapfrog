@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plagiarism Checker</title>
+</head>
+<body>
+    <div><label>First Text: </label><input type="text" id="firstInput" oninput="checkSimilarity()" /></div>
+    <div><label>Second Text: </label><input type="text" id="secondInput" oninput="checkSimilarity()" /></div>
+    <div>Text Similarity: <span id="output"> None (Please enter text)</span></div>
+    <div id ="plagiarism"></div>
+    <div id ="display"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
