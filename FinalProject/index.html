@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <title>Plagiarism Checker</title>
 </head>
 <body>
@@ -12,11 +17,16 @@
         <input type="file" id="firstFile" />
         <input type="file" id="secondFile" />
         <button type="submit" onclick="checkSimilarity()">Check Similarity</button>
-        <div>Text Similarity: <span id="output"> None (Please choose files)</span></div>
+        <div><strong>Text Similarity: </strong><span id="output"> None (Please choose files)</span></div>
         <div id ="plagiarism"></div>
-        <div id ="display"></div>
+        <div><strong>First File Unique Keywords: </strong><span id="firstUnique"> None</span></div>
+        <div><strong>Second File Unique Keywords: </strong><span id="secondUnique"> None</span></div>
+        <div><strong>Matched String: </strong><span id="matchedString"> None</span></div>
     </div>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/algorithm.js"></script>
+    <script src="js/helperFunction.js"></script>
+    <script src="js/stopWord.js"></script>
 </body>
 </html>
