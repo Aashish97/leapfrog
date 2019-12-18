@@ -1,6 +1,41 @@
+let str1, str2;
+
+(function getInputFiles(){
+  let firstInput = document.getElementById("firstFile");
+  let secondInput = document.getElementById("secondFile");
+  // let output = document.getElementById("output1");
+
+  firstInput.addEventListener("change", function () {
+    if (this.files && this.files[0]) {
+      let myFile = this.files[0];
+      let reader = new FileReader();
+      
+      reader.addEventListener('load', function (e) {
+        str1 = e.target.result;
+        // console.log(str1);
+      });
+      
+      reader.readAsBinaryString(myFile);
+    }
+  });
+
+  secondInput.addEventListener("change", function () {
+    if (this.files && this.files[0]) {
+      let myFile = this.files[0];
+      let reader = new FileReader();
+      
+      reader.addEventListener('load', function (e) {
+        str2 = e.target.result;
+        // console.log(str2);
+      });
+      
+      reader.readAsBinaryString(myFile);
+    }
+  });
+
+})();
+
 function checkSimilarity() {
-  let str1 = document.getElementById("firstInput").value;
-  let str2 = document.getElementById("secondInput").value;
 
   if (str1 !== "" && str2 !== "") {
     //
@@ -20,19 +55,18 @@ function checkSimilarity() {
       .map(toLowercase)
       .map(removeStopWords);
 
-    str1Words = str1Words.filter(function(el,i, arr) {
-      console.log(arr.length);
-      
-      
-      return el != '';
+    //removes empty string from the array
+    str1Words = str1Words.filter(function(el, i, arr) {
+      // console.log(arr.length);
+
+      return el != "";
     });
 
-    str2Words = str2Words.filter(function(el,i, arr) {
-      return el != '';
+    str2Words = str2Words.filter(function(el, i, arr) {
+      return el != "";
     });
 
-    
-    console.log(str1Words, str2Words);
+    // console.log(str1Words, str2Words);
 
     let allWordsUnique = Array.from(new Set(str1Words.concat(str2Words)));
 
@@ -59,7 +93,7 @@ function checkSimilarity() {
     if (cosSim > 0.5) {
       document.getElementById("plagiarism").innerHTML = "Plagiarism Detected";
     } else {
-      document.getElementById("plagiarism").innerHTML = "";
+      document.getElementById("plagiarism").innerHTML = "No Plagiarism";
     }
 
     // (function matchString() {

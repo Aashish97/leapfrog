@@ -7,11 +7,15 @@
     <title>Plagiarism Checker</title>
 </head>
 <body>
-    <div><label>First Text: </label><input type="text" id="firstInput" oninput="checkSimilarity()" /></div>
-    <div><label>Second Text: </label><input type="text" id="secondInput" oninput="checkSimilarity()" /></div>
-    <div>Text Similarity: <span id="output"> None (Please enter text)</span></div>
-    <div id ="plagiarism"></div>
-    <div id ="display"></div>
+
+    <div>
+        <input type="file" id="firstFile" />
+        <input type="file" id="secondFile" />
+        <button type="submit" onclick="checkSimilarity()">Check Similarity</button>
+        <div>Text Similarity: <span id="output"> None (Please choose files)</span></div>
+        <div id ="plagiarism"></div>
+        <div id ="display"></div>
+    </div>
 
     <script src="main.js"></script>
 </body>
