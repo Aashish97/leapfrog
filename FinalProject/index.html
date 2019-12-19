@@ -13,15 +13,80 @@
 </head>
 <body>
 
-    <div>
-        <input type="file" id="firstFile" />
-        <input type="file" id="secondFile" />
-        <button type="submit" onclick="checkSimilarity()">Check Similarity</button>
-        <div><strong>Text Similarity: </strong><span id="output"> None (Please choose files)</span></div>
-        <div id ="plagiarism"></div>
-        <div><strong>First File Unique Keywords: </strong><span id="firstUnique"> None</span></div>
-        <div><strong>Second File Unique Keywords: </strong><span id="secondUnique"> None</span></div>
-        <div><strong>Matched String: </strong><span id="matchedString"> None</span></div>
+    <div class="whole-wrapper">
+        <div class="file-wrapper">
+            <h1><span style="color: blue;">Plagiarism </span><span style="color: #9c27b0;">Checker</span></h1>
+            <div class="similarity-wrapper">
+                <div class="container">
+                    <div class="button-wrap">
+                        <label class ="new-button" for="firstFile">Choose File</label>
+                        <input id="firstFile" type="file">
+                        <p>Total Words: <span id="total-first-word"></span></p>
+                        <p>Total KeyWords: <span id="total-first-keyword"></span></p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="button-wrap">
+                        <label class ="new-button" for="secondFile">Choose File</label>
+                        <input id="secondFile" type="file">
+                        <p>Total Words: <span id="total-second-word"></span></p>
+                        <p>Total KeyWords: <span id="total-second-keyword"></span></p>
+                    </div>
+                </div>
+
+                <div><button type="submit" class="button" onclick="checkSimilarity()">Check Plagiarism</button></div>
+            </div>
+        </div>
+        <div class="plagiarism-body">
+            <p>
+                <strong>Text Similarity: </strong><span id="output"> None (Please choose files)</span>
+            </p>
+    
+            <p id ="plagiarism"></p>
+        </div>
+
+        <div class="keyword-count-wrapper">
+            <div class="keyword-wrapper">
+                <div class="keyword-count">
+                    <div class="keyword-count-card keyword-count-card-left">
+                        <div class="keyword-count-header">
+                            <p><strong>First File Unique Keywords</strong></p>
+                        </div>
+
+                        <div class="keyword-content">
+                            <p>
+                                <span id="firstUnique">None</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="keyword-count-card">
+                        <div class="keyword-count-header">
+                            <p><strong>Second File Unique Keywords</strong></p>
+                        </div>
+
+                        <div class="keyword-content">
+                            <p>
+                                <span id="secondUnique">None</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="matched-string" clearfix>
+                <div class="keyword-count-header">
+                    <p><strong>Matched String</strong></p>
+                </div>
+
+                <div class="keyword-content">
+                    <p>
+                        <span id="matchedString"> None</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     <script src="js/main.js"></script>

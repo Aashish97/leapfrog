@@ -11,6 +11,8 @@ let str1, str2;
       
       reader.addEventListener('load', function (e) {
         str1 = e.target.result;
+        // console.log(str1.split(' ').length);
+        document.getElementById("total-first-word").innerHTML = str1.split(' ').length;
       });
       
       reader.readAsBinaryString(myFile);
@@ -24,6 +26,8 @@ let str1, str2;
       
       reader.addEventListener('load', function (e) {
         str2 = e.target.result;
+        // console.log(str2.split(' ').length);
+        document.getElementById("total-second-word").innerHTML = str2.split(' ').length;
       });
       
       reader.readAsBinaryString(myFile);
@@ -67,10 +71,14 @@ function checkSimilarity() {
     // console.log(str1Words, str2Words);
 
     let firstUnique = Array.from(new Set(str1Words));
-    document.getElementById("firstUnique").innerHTML = firstUnique;
+    document.getElementById("total-first-keyword").innerHTML = firstUnique.length;
+    // console.log(firstUnique.length);
+    document.getElementById("firstUnique").innerHTML = firstUnique.join(', ');
 
     let secondUnique = Array.from(new Set(str2Words));
-    document.getElementById("secondUnique").innerHTML = secondUnique;
+    // console.log(secondUnique.length);
+    document.getElementById("total-second-keyword").innerHTML = secondUnique.length;
+    document.getElementById("secondUnique").innerHTML = secondUnique.join(', ');
 
     let allWordsUnique = Array.from(new Set(str1Words.concat(str2Words)));
 
@@ -79,7 +87,7 @@ function checkSimilarity() {
       for(let i = 0; i<firstUnique.length+secondUnique.length; i++){
         if (firstUnique.includes(secondUnique[i])) {
           matchString.push(secondUnique[i]);
-          document.getElementById("matchedString").innerHTML = matchString;
+          document.getElementById("matchedString").innerHTML = matchString.join(', ');
         }
       }
     })();
@@ -104,10 +112,12 @@ function checkSimilarity() {
 
     document.getElementById("output").innerHTML = cosSim;
 
-    if (cosSim > 0.7) {
-      document.getElementById("plagiarism").innerHTML = "Plagiarism Detected";
+    if (cosSim > 0.5) {
+      document.getElementById("plagiarism").innerHTML = "PLAGIARISM DETECTED!!!";
+      document.getElementById("plagiarism").style.color = 'white';
     } else {
-      document.getElementById("plagiarism").innerHTML = "No Plagiarism";
+      document.getElementById("plagiarism").innerHTML = "NO PLAGIARISM";
+      document.getElementById("plagiarism").style.color = 'white';
     }
   }
 }

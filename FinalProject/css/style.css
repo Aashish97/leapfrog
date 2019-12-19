@@ -1,0 +1,77 @@
+.container {
+    width: 40%;
+    margin: 0 auto;
+    float: left;
+  }
+  
+  input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    top: 6px;
+    left: 4px;
+    font-size: 15px;
+    color: grey;
+    outline: none;
+  }
+
+
+  .button-wrap {
+    position: relative;
+  }
+  
+  .new-button {
+      display: inline-block;
+      padding: 8px 12px; 
+      cursor: pointer;
+      border-radius: 4px;
+      background-color: #9c27b0;
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #fff;
+  }
+
+ .button{
+     padding: 8px;
+     display: block;
+     margin: 0 auto;
+     cursor: pointer;
+     color: black;
+     background-color: white;
+     border: 1px solid black;
+     border-radius: 4px;
+ }
+
+ .button:hover{
+     color: white;
+     background-color: blue;
+ }
+
+.keyword-count-header{
+  line-height: 80px;
+}
+
+.keyword-count-content{
+  color: blue;
+}
+
+.keyword-count-card:hover{
+  background-color: #9933ff;
+  transition: 0.6s ease;
+  color: white;
+}
+
+.matched-string:hover{
+  background-color: #9933ff;
+  transition: 0.6s ease;
+  color: white;
+}
+
+.keyword-content{
+  height: 90px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+#secondUnique{
+  display: inline-block;
+}
